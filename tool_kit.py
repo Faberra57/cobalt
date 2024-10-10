@@ -75,6 +75,7 @@ def data_to_matrix(df,mask_or_image):
     matrixs = []
     for image_id in df['image_id']:
         img =  img = cv2.imread(folder + '/' + image_id, cv2.IMREAD_GRAYSCALE)
+        img = cv2.resize(img, (img_width, img_height))
         matrixs.append(img)
     return matrixs
 
