@@ -4,7 +4,7 @@ import os
 
 #load mask
 
-def load_data_mask(folder):
+def load_data_mask(folder ='dataset/archive/BBBC005_v1_ground_truth/synthetic_2_ground_truth'):
     # folder = 'dataset/archive/BBBC005_v1_ground_truth/synthetic_2_ground_truth'
     img_list = os.listdir(folder)
     img_list.remove('.htaccess') # remove this file
@@ -67,7 +67,7 @@ def load_data_image(folder ='dataset/archive/BBBC005_v1_images/BBBC005_v1_images
 
 #load image and ground truth 
 # mask_or_image = 'mask' or 'image' 
-def data_to_matrix(df,mask_or_image):
+def data_to_matrix(df,img_width,img_height,mask_or_image):
     if mask_or_image == 'mask':
         folder = 'dataset/archive/BBBC005_v1_ground_truth/synthetic_2_ground_truth'
     else:
