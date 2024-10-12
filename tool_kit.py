@@ -1,12 +1,18 @@
 import pandas as pd
 import cv2
 import os
+folder_mask = ''
+folder_image = ''
 
+# important de lancer set_path_to_dataset avant de lancer les autres fonctions
+def set_path_to_dataset(path_from_file_to_dataset):
+    global folder_mask, folder_image
+    folder_mask = os.path.join(path_from_file_to_dataset,'dataset/archive/BBBC005_v1_ground_truth/synthetic_2_ground_truth')
+    folder_image = os.path.join(path_from_file_to_dataset,'dataset/archive/BBBC005_v1_images/BBBC005_v1_images')
 #load mask
-
-def load_data_mask(folder ='dataset/archive/BBBC005_v1_ground_truth/synthetic_2_ground_truth'):
-    # folder = 'dataset/archive/BBBC005_v1_ground_truth/synthetic_2_ground_truth'
-    img_list = os.listdir(folder)
+def load_data_mask(folder = folder_mask):
+    global folder_mask, folder_image
+    img_list = os.listdir(folder_mask)
     img_list.remove('.htaccess') # remove this file
 
     def get_num_cells(x):
@@ -27,10 +33,10 @@ def load_data_mask(folder ='dataset/archive/BBBC005_v1_ground_truth/synthetic_2_
 
 #load image and mask
 
-def load_data_image(folder ='dataset/archive/BBBC005_v1_images/BBBC005_v1_images' ):
+def load_data_image(folder=folder_image):
+    global folder_mask, folder_image
     # folder = 'dataset/archive/BBBC005_v1_images'
-    folder_mask = 'dataset/archive/BBBC005_v1_ground_truth/BBBC005_v1_ground_truth'
-    img_list = os.listdir(folder)
+    img_list = os.listdir(folder_image)
     mask_list = os.listdir(folder_mask)
     img_list.remove('.htaccess') # remove this file
     mask_list.remove('.htaccess') # remove this file
@@ -67,11 +73,12 @@ def load_data_image(folder ='dataset/archive/BBBC005_v1_images/BBBC005_v1_images
 
 #load image and ground truth 
 # mask_or_image = 'mask' or 'image' 
-def data_to_matrix(df,img_width,img_height,mask_or_image):
+def data_to_numpy(df,img_width,img_height,mask_or_image):
+    global folder_mask, folder_image
     if mask_or_image == 'mask':
-        folder = 'dataset/archive/BBBC005_v1_ground_truth/synthetic_2_ground_truth'
+        folder = folder_mask
     else:
-        folder = 'dataset/archive/BBBC005_v1_images/BBBC005_v1_images'
+        folder = folder_image
     matrixs = []
     for image_id in df['image_id']:
         img =  img = cv2.imread(folder + '/' + image_id, cv2.IMREAD_GRAYSCALE)
