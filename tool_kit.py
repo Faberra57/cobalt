@@ -4,12 +4,14 @@ import os
 folder_mask = ''
 folder_image = ''
 
+
 # important de lancer set_path_to_dataset avant de lancer les autres fonctions
 def set_path_to_dataset(path_from_file_to_dataset):
     global folder_mask, folder_image
     folder_mask = os.path.join(path_from_file_to_dataset,'dataset/archive/BBBC005_v1_ground_truth/synthetic_2_ground_truth')
     folder_image = os.path.join(path_from_file_to_dataset,'dataset/archive/BBBC005_v1_images/BBBC005_v1_images')
 #load mask
+
 def load_data_mask(folder = folder_mask):
     global folder_mask, folder_image
     img_list = os.listdir(folder_mask)
@@ -85,6 +87,17 @@ def data_to_numpy(df,img_width,img_height,mask_or_image):
         img = cv2.resize(img, (img_width, img_height))
         matrixs.append(img)
     return matrixs
+
+def get_image(img_id,img_width,img_height,mask_or_image):
+    global folder_mask, folder_image
+    if mask_or_image == 'mask':
+        folder = folder_mask
+    else:
+        folder = folder_image
+    img = cv2.imread(folder_image + '/' + img_id, cv2.IMREAD_GRAYSCALE)
+    img = cv2.resize(img, (img_width, img_height))
+    return img
+
 
 if __name__ == '__main__':
     folder = 'dataset/archive/BBBC005_v1_ground_truth/synthetic_2_ground_truth'
