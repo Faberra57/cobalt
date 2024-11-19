@@ -3,3 +3,4 @@ labelisation/
 __pycache__/
 open_data.ipynb
 synthetic _cell_images_and_marks/
+capsule_network.onnx
