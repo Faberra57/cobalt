@@ -3,5 +3,6 @@ labelisation/
 __pycache__/
 open_data.ipynb
 synthetic _cell_images_and_marks/
-capsule_network.onnx
-capsule_network_bis.onnx
+*.onnx
+*.pt
+!CapsuleNetworks/model100.pt
