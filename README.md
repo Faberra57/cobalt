@@ -27,9 +27,9 @@ Nous avons travaillé sur la base de données [Synthetic Cell Images and Masks](
 
 ## Algorithmes
 Vous trouverez 3 dossiers :
-* [CNN](https://github.com/Faberra57/cobalr/tree/main/CNN) : 
-* [U-Net](https://github.com/Faberra57/cobalr/tree/main/Inet) :
-* [Capsule Networks](https://github.com/Faberra57/cobalr/tree/main/CapsuleNetworks) :
+* [CNN](https://github.com/Faberra57/cobalt/tree/main/CNN) : 
+* [U-Net](https://github.com/Faberra57/cobalt/tree/main/Inet) :
+* [Capsule Networks](https://github.com/Faberra57/cobalt/tree/main/CapsuleNetworks) :
 
 ## Résultats
 
