@@ -22,10 +22,14 @@ Nous avons travaillé sur la base de données [Synthetic Cell Images and Masks](
 
 <div style="text-align: center;">
   <img src="https://data.broadinstitute.org/bbbc/BBBC005/synthetic2_in_focus_image.png" alt="Exemple d'image du dataset" />
-  <p>Voici un exemple d'image du dataset.</p>
+  <p>Exemple d'image du dataset.</p>
 </div>
 
 ## Algorithmes
+Vous trouverez 3 dossiers :
+* [CNN](https://github.com/Faberra57/cobalr/tree/main/CNN) : 
+* [U-Net](https://github.com/Faberra57/cobalr/tree/main/Inet) :
+* [Capsule Networks](https://github.com/Faberra57/cobalr/tree/main/CapsuleNetworks) :
 
 ## Résultats
 
