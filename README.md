@@ -15,6 +15,9 @@
 ## Contexte
 Dans le cadre de notre projet commande entreprise en collaboration avec [Cobalt Contraception](https://www.cobalt-contraception.com/), nous avons développé un algorithme d’intelligence artificielle capable de déterminer le nombre de cellules présentes sur une image microscopique. Cet algorithme s’appuie sur une base de données en ligne contenant des images de cellules. Cet algorithme pourra ensuite être intégré dans une carte Raspberry.
 
+![](https://data.broadinstitute.org/bbbc/BBBC005/synthetic2_in_focus_image.png)
+*Exepmle d'image du dataset*
+
 Notre équipe est composée de :
 - Khalil ABDELHEDI
 - Corentin BOUTAULT
@@ -40,7 +43,7 @@ Pour utiliser ce projet, suivez les étapes suivantes :
    git clone https://github.com/Faberra57/cobalt.git
    cd cobalt
 
-1. **Utiliser un modèle déjà entraîné :**
+### <u>Utiliser un modèle déjà entraîné :</u>
 
 * **Télécharger le dataset :**
 Rendez vous sur la page kaggle de [Synthetic Cell Images and Masks](https://www.kaggle.com/datasets/vbookshelf/synthetic-cell-images-and-masks-bbbc005-v1) et cliquez sur **Download** afin de télécharger le dataset.
@@ -51,4 +54,4 @@ Utilisez le fichier *compteur de cellule.py* afin d'appliquer le modèle. Pour c
 ```python
 model_path = 'votre_modèle.onnx'
 ```
-Assurez-vous que *votre_modèle.onnx* se trouve dans le m$eme dossier que *compteur de cellule.py*.
+Assurez-vous que *votre_modèle.onnx* se trouve dans le même dossier que *compteur de cellule.py*.
