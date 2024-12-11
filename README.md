@@ -1,8 +1,8 @@
 # Traitement d’images microscopiques par intelligence artificielle
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/IMT_Atlantique_logo.png/1280px-IMT_Atlantique_logo.png" alt="" width="45%">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfAZZHf2o6lIst7xBKT7S8f-nE2z1aQSGK3w&s" alt="" width="45%">
+  <img src="https://www.imt-atlantique.fr/sites/default/files/ecole/logos/imtatlantique/imtatlantique-cmjn-reserve.png" alt="" height="45%">
+  <img src="https://media.licdn.com/dms/image/v2/C4E0BAQECWVPdJief2Q/company-logo_200_200/company-logo_200_200/0/1668505576220/cobalt_contraception_logo?e=2147483647&v=beta&t=TVbzQ0YoOCeWGU_jZFDfCeVXCAjEcox2pfQ1akBoFVo" alt="" height="45%">
 </p>
 
 ## Sommaire
