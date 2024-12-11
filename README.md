@@ -35,10 +35,20 @@ Nous avons travaillé sur la base de données [Synthetic Cell Images and Masks](
 
 Pour utiliser ce projet, suivez les étapes suivantes :
 
-1. **Cloner le dépôt :**
+* **Cloner le dépôt :**
    ```bash
    git clone https://github.com/Faberra57/cobalt.git
    cd cobalt
 
-2. **Télécharger dataset :**
-   
+1. **Utiliser un modèle déjà entraîné :**
+
+* **Télécharger le dataset :**
+Rendez vous sur la page kaggle de [Synthetic Cell Images and Masks](https://www.kaggle.com/datasets/vbookshelf/synthetic-cell-images-and-masks-bbbc005-v1) et cliquez sur **Download** afin de télécharger le dataset.
+
+* **Implémenter sur la carte Raspberry**
+[Lien vers la documentation Raspberry Pi](https://docs.google.com/document/d/1x48W1OlW6UofIinBcvy3fAUehOSoxmO2rE9DZH93tJM/edit?tab=t.0)
+Utilisez le fichier *compteur de cellule.py* afin d'appliquer le modèle. Pour changer le modèle utilisé, il vous suffir de changer cette ligne :
+```python
+model_path = 'votre_modèle.onnx'
+```
+Assurez-vous que *votre_modèle.onnx* se trouve dans le m$eme dossier que *compteur de cellule.py*.
