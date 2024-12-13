@@ -6,3 +6,4 @@ synthetic _cell_images_and_marks/
 *.onnx
 *.pt
 !CapsuleNetworks/model100.pt
+!model/capsule_network_image_100_final.onnx
