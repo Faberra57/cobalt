@@ -13,7 +13,7 @@ Ce projet, sous la direction de **Cobalt**, a pour objectif de compter le nombre
 
 ### Dossier **Capsule Network** :
 
-(Description à ajouter si nécessaire.)
+Le dossier CapsuleNetwork contient un fichier qui se nomme **capsNet.ipyng** et vise à créer une architecture capsule network et à entrainer un model suivant cette architecture afin de compter le nombre de cellules sur le dataset.
 
 ### Dossier **U-net** :
 
