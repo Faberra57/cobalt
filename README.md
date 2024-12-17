@@ -41,11 +41,14 @@ Dans le dossier *Arduino*, on trouve aussi le fichier *resize_images.py* pour ch
 
 
 ## Résultats
-Pour tester les performances des modèles ONNX, utilisez le programme test_performance_modele_onnx.py. Il est possible de choisir le nombre d'image TIF pour mesurer les performances avec la variable "nb_images". On peut aussi choisir le dossier où les images sont à analyser : 
+Pour tester les performances des modèles ONNX, utilisez le programme *test_performance_modele_onnx.py*. Il est possible de choisir le nombre d'image TIF pour mesurer les performances avec la variable "nb_images". On peut aussi choisir le dossier où les images sont à analyser : 
+```python
     image_folder = '...'
-
+```
+```python
 Enfin pour choisir le modèle onnx : 
     model_path = '...'
+```
 
 Les modèles créés sont 'CNN/cnn.onnx' et 'CapsuleNetworks/capsule_network.onnx'
 
