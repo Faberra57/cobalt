@@ -38,7 +38,7 @@ model_path = 'model/votre_modèle.onnx'
 
 
 Dans le dossier *Arduino*, on trouve aussi le fichier *resize_images.py* pour changer la taille des images au format des inputs des modèles onnx afin que le dossier d'images soit moins lourds sur la carte raspberry pi.
----
+
 
 ## Résultats
 Pour tester les performances des modèles ONNX, utilisez le programme test_performance_modele_onnx.py. Il est possible de choisir le nombre d'image TIF pour mesurer les performances avec la variable "nb_images". On peut aussi choisir le dossier où les images sont à analyser : 
