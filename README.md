@@ -45,8 +45,9 @@ Pour tester les performances des modèles ONNX, utilisez le programme *test_perf
 ```python
     image_folder = '...'
 ```
-```python
+
 Enfin pour choisir le modèle onnx : 
+```python
     model_path = '...'
 ```
 
