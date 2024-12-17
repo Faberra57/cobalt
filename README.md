@@ -51,8 +51,6 @@ Enfin pour choisir le modèle onnx :
 model_path = '...'
 ```
 
-Les modèles créés sont 'CNN/cnn.onnx' et 'CapsuleNetworks/capsule_network.onnx'
-
 Il ne reste plus qu'à executer ou ouvrir le fichier *Résultat modèles onnx.pdf* pour avoir les performances du modèle.
 
 
